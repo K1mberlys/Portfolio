@@ -1,0 +1,377 @@
+body{
+  font-family: "Open sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#fcfcfc;
+}
+
+/* För headern och videon */
+header {
+  position: relative; /* Behåll positioneringen för att placera elementen korrekt */
+  height: 100vh; /* Full höjd för videon */
+  width: 100%; /* Full bredd */
+  overflow: hidden; /* Dölj allt som går utanför headern */
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Gör videon så bred som fönstret */
+  height: 100%; /* Gör videon så hög som fönstret */
+  object-fit: inherit; /* Skär och justerar videon så att den täcker hela området utan förvrängning */
+  z-index: -1; /* Lägg videon bakom innehållet */
+}
+
+/* För navigeringen */
+nav {
+  position: absolute; /* Placera den ovanpå videon */
+  top: 10px; /* Avstånd från toppen av sidan */
+  right: 20px; /* Avstånd från högersidan */
+  z-index: 10; /* Gör att navigeringen ligger ovanpå videon */
+}
+
+nav ul {
+  list-style: none; /* Ta bort punktlista */
+  margin: 0; /* Ingen marginal */
+  padding: 0; /* Ingen padding */
+  display: flex; /* Gör att länkarna visas på samma rad */
+  gap: 20px; /* Avstånd mellan länkar */
+}
+
+nav ul li {
+  display: inline; /* Placera länkarna på rad */
+}
+
+nav ul li a {
+  text-decoration: none; /* Ingen understrykning */
+  color: #f4f2f2; /* Textfärg */
+  font-weight:normal; /* Normal text */
+  padding: 10px 15px; /* Lägg till lite utrymme runt länkarna */
+  background: rgba(160, 39, 39, 0.858); /* Halvtransparent bakgrund för bättre läsbarhet */
+  border-radius: 5px; /* Runda hörn */
+}
+
+nav ul li a:hover {
+  background: rgba(123, 122, 122, 0.2); /* Ändra bakgrund vid hover */
+  color: black;
+}
+
+#about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  gap: 2rem;
+  text-align: left;
+  background-image: url("about2.png"); /* Ange bildens sökväg */
+  background-size:auto; /* Ser till att bilden fyller hela sektionen */
+  background-position: right; /* Centrerar bilden */
+  background-repeat: no-repeat; /* Förhindrar att bilden upprepas */
+}
+
+/* Om Mig-sektion */
+.about-content {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  text-align: left;
+  padding: 4rem;
+  margin-right: 25rem;
+}
+
+#about h2{
+  font-size: 2.5rem;
+  font-family: "Abril Fatface", serif;
+  font-style:normal;
+  color:#ad3030;
+  margin-bottom: 1rem;
+}
+
+#about p{
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/* Porträtt-container */
+.portrait-container {
+  display: flex; /* Flexbox för vertikal layout */
+  flex-direction: column; /* Placera innehållet vertikalt */
+  align-items: center; /* Centrera innehållet horisontellt */
+  gap: 1rem; /* Utrymme mellan bilden och knappen */
+}
+
+.portrait {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* Gör bilden rund */
+  box-shadow: 0 4px 8px #ad3030;
+  object-fit: cover;
+}
+
+.download-button {
+  background-color:rgba(160, 39, 39, 0.858);
+  color: #f4f2f2;
+  font-size: 1rem;
+  padding: 0.5rem 1.0rem;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: green; /* Gör knappen grön vid hover */
+}
+
+/* För resten av sidan */
+section {
+  padding: 2rem;
+  color: black;
+}
+
+#skills {
+  text-align: center; /* Centrerar hela sektionen */
+  padding: 2rem;
+  font-family: "Abril Fatface", serif;
+  color:#ad3030;
+}
+#skills h2{
+  font-size: 2.5rem;
+}
+
+.skills-container {
+  display: flex; /* Gör att bilderna placeras på en rad */
+  justify-content: center; /* Centrerar bilderna horisontellt */
+  gap: 2rem; /* Skapar utrymme mellan bilderna */
+  flex-wrap: wrap; /* Gör att bilderna radbryts på små skärmar */
+}
+
+.skills-container img {
+  width: 300px; /* Bildens bredd */
+  height: 300px; /* Bildens höjd */
+  object-fit: contain; /* Anpassar bilden inom rutan utan att förvränga den */
+  border-radius: 10px; /* Rundar hörnen något, kan justeras */
+  box-shadow: 0 4px 8px #ad3030; /* Lägger till en skugga för snyggare design */
+  transition: transform 0.3s; /* Gör en snygg effekt vid hover */
+}
+
+.skills-container img:hover {
+  transform: scale(1.1); /* Förstorar bilden något när användaren hovrar */
+}
+
+#portfolio {
+  text-align: center; /* Centrerar rubrik och innehåll */
+  padding: 4rem 2rem; /* Lägger till luft runt sektionen */
+}
+
+#portfolio h2 {
+  font-size: 2.5rem; /* Anpassar storleken på rubriken */
+  margin-bottom: 1rem; /* Skapar avstånd mellan rubrik och video */
+  color: #ad3030; /*färg*/
+  font-family: "Abril Fatface", serif;
+}
+
+#portfolio h3{
+  color: #ad3030;
+}
+
+#portfolio p {
+  font-size: 1rem; /* Standardstorlek för text */
+  line-height: 1.5; /* Skapar en bekväm radavstånd */
+  margin-top: 1rem; /* Ger avstånd mellan video och text */
+  color: black; /* Neutral färg för text */
+}
+#portfolio a{
+  color:#ad3030;
+  text-decoration: none;
+}
+#portfolio a:hover{
+  color: green;
+}
+
+.portfolio-videos video {
+  margin: 0 auto; /* Centrerar videon horisontellt */
+  max-width: 800px; /* Begränsar bredden på videon */
+  width: 100%; /* Låter videon fylla hela sin container */
+  max-height: 450px; /* Sätter en maxhöjd för videon */
+}
+
+@media (max-width: 768px) { /* EVENTUELLT TA BORT */
+  #portfolio h2 {
+    font-size: 2rem; /* Gör rubriken mindre på mindre skärmar */
+  }
+  
+  .portfolio-videos video {
+    max-height: 300px; /* Anpassar videons storlek för mobiler */
+  }
+}
+
+/* REFERENSSEKTION */
+#references {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fcfcfc;
+}
+
+#references h2 {
+  font-size: 2.5rem;
+  font-family: "Abril Fatface", serif;
+  margin-bottom: 3rem;
+  color:#ad3030;
+}
+
+/* Container för bubblorna */
+.references-container {
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Mellanrum mellan bubblor */
+}
+
+/* Bubblor */
+.reference-bubble {
+  background-color: #fcfcfc;
+  border-radius: 50%; /* Gör den rund */
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 15px #ad3030;
+}
+
+/* Text i bubblorna */
+.reference-bubble p {
+  font-size: 1rem;
+  color: black;
+  margin: 0 0 0.5rem 0;
+}
+
+.reference-bubble span {
+  font-size: 0.9rem;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .references-container {
+    flex-direction: column; 
+  }
+
+  .reference-bubble {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Kontaktsektion */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#fcfcfc;
+  padding: 4rem 2rem;
+}
+
+/* Ruta för kontaktformulär */
+.contact-box {
+  background-color: #fff;
+  border-radius: 15px; /* Rundade hörn */
+  box-shadow: 0 0 15px #ad3030;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Titel i kontaktsektionen */
+#contact h2 {
+  font-size: 2rem;
+  font-family: "Abril Fatface", serif;
+  margin-bottom: 1rem;
+  color:#ad3030
+}
+
+/* Formulärens styling */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Avstånd mellan fälten */
+}
+
+/* Formfältens styling */
+#contactForm label {
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Rundade kanter */
+  font-size: 1rem;
+  resize:none;
+}
+
+/* Knappar */
+#contactForm button {
+  background-color: #ad3030;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: green;
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    padding: 1.5rem;
+  }
+
+  #contact h2 {
+    font-size: 1.8rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f2f2;
+  color:#ad3030;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Mellanrum mellan ikoner */
+  margin-top: 1rem;
+}
+
+/* Stil för länkar runt ikonerna */
+.icons a {
+  color:#ad3030; 
+  font-size: 1.5rem; /* Storlek på ikoner */
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smidig övergång */
+  text-decoration: none;
+}
+.icons p{
+  font-size: 0.8rem;
+}
+
+.icons a:hover {
+  color: green; /* Färgförändring vid hover (grön här som exempel) */
+  transform: scale(1.2); /* Gör ikonen större vid hover */
+}

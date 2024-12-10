@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&family=Bungee+Hairline&family=Fira+Code:wght@300..700&family=Funnel+Display:wght@300..800&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Major+Mono+Display&family=Ms+Madi&family=Rubik:ital,wght@0,300..900;1,300..900&family=Zeyada&display=swap" rel="stylesheet">
+  <title>Utvecklarportfölj</title>
+</head>
+<body>
+  <header>
+    <video src="Header4.mp4" autoplay muted loop playsinline></video>
+    <nav>
+      <ul>
+        <li><a href="#about">Om Mig</a></li>
+        <li><a href="#skills">Kunskaper</a></li>
+        <li><a href="#portfolio">Portfölj</a></li>
+        <li><a href="#references">Referenser</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="about-content">
+        <div class="portrait-container">
+          <img src="Porträttbild.jpg" alt="Porträttbild" class="portrait">
+          <button class="download-button" onclick="downloadCV()">Ladda ner mitt CV</button>
+        </div>
+        <div class="about-text">
+          <h2>Om Mig</h2>
+          <p>Hej! Jag heter Kimberly och studerar för närvarande till Webbutvecklare .NET.
+            Under min utbildning på Nackademin har jag utvecklat kunskaper inom bland annat C#, HTML, CSS och JavaScript. 
+            Jag har arbetat med projekt som inkluderar objektorienterad design, agila arbetsmetoder samt utveckling av applikationer för att hantera data, som exempelvis en produktkatalog i C#.
+            Innan jag började mina studier arbetade jag heltid som Real Time Specialist. Du är varmt välkommen att ladda ner mitt CV för att få en djupare inblick i mina tidigare arbetslivserfarenheter.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="skills">
+      <h2>Kunskaper</h2>
+      <div class="skills-container">
+        <img src="csharp.png" alt="C#-logotyp" title="C#">
+        <img src="html.png" alt="HTML-logotyp" title="HTML">
+        <img src="css.png" alt="CSS-logotyp" title="CSS">
+        <img src="javascript.png" alt="JavaScript-logotyp" title="JavaScript">
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfölj</h2>
+      <div>
+        <article>
+          <div class="portfolio-videos"> 
+            <video src="projekt3.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <h3>Produktkatalog</h3>
+          <p>I detta projekt utvecklade jag en applikation för att hantera en produktkatalog, där jag implementerade funktioner för att lägga till, visa och spara produkter. Applikationen var en konsolapplikation som använder C# och lagrar data i en .json-fil. Jag skapade även enhetstester för att säkerställa att funktionerna fungerade korrekt.</p>
+          <a href="https://github.com/K1mberlys/Produktkatalog" target="_blank">Github-länk</a>
+        </article>
+        <article>
+          <h3>Objektorienterad analys och design</h3>
+          <p>I detta projekt arbetade jag med objektorienterad design och analys som en del av ett team. Vi genomförde kravspecifikation, skapade user stories och aktivitetsdiagram, samt genomförde enhetstester baserade på TDD. Projektet var en praktisk övning i agila arbetsmetoder och designmönster som SOLID och Service Pattern.</p>
+          <a href="https://github.com/Grupp-3-OAD/ProductProvider-Kimberly-Olivia" target="_blank">Github-länk</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="references">
+      <h2>Referenser</h2>
+      <div class="references-container">
+
+        <div class="reference-bubble">
+          <p>Jane Doe</p>
+          <p>Tidigare chef</p>
+          <span>Kontakt:</span>
+          <span>Jane.Doe@hotmail.com</span>
+          <span>+46 123 45 678 </span>
+        </div>
+        <div class="reference-bubble">
+          <p>John Doe</p>
+          <p>Tidigare kollega</p>
+          <span>Kontakt:</span>
+          <span>JohnDoe@hotmail.com</span>
+          <span>+46 123 45 678</span>
+        </div>
+        <div class="reference-bubble">
+          <p>Anne Doe</p>
+          <p>Tidigare kollega</p>
+          <span>Kontakt:</span>
+          <span>AnneDoe123@hotmail.com</span>
+          <span>+46 123 45 678</span>
+        </div>
+      </div>
+    </section>    
+
+    <section id="contact">
+      <div class="contact-box">
+        <h2>Kontakta mig</h2>
+        <form id="contactForm">
+          <label for="name">Namn</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">E-post</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Meddelande</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Skicka</button>
+        </form>
+      </div>
+    </section>   
+
+  <footer>
+    <div class="icons">
+      <a href="https://github.com/K1mberlys" target="_blank">
+        <i class="fa-brands fa-square-github"></i>
+        <p>Github</p>
+      </a>
+      <a href="https://www.linkedin.com/in/kimberly-s-28b5562a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        <p>Linkedin</p>
+      </a>
+    </div>
+    <p>© 2024 Kimberly Sseremba Hadjal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
