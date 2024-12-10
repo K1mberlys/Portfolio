@@ -10,7 +10,7 @@ Med hjälp av HTML, CSS och JavaScript har jag byggt en portfölj. I detta proje
 * Portfölj: Två av mina projekt med beskrivningar och länkar till GitHub.
 * Referenser: Referenser från tidigare arbetsplatser.
 * Kontaktformulär: Ett formulär där man kan skicka meddelanden till mig.
-* Footer: Med länkar till mina sociala medier (GitHub och LinkedIn).
+* Footer: Med länkar till mina sociala medier (GitHub och LinkedIn) samt ett väder API.
 
 ## Teknologier
 Följande teknologier har använts i skapandet av projektet: 
@@ -32,6 +32,12 @@ Följande teknologier har använts i skapandet av projektet:
 * script.js: fil för funktionaliteten. 
 * README.md: fil för dokumentation
 * Övrigt: bilder och videos som använts för portföljen. 
+
+## Testning
+* Kontaktformuläret har testats för att säkerställa att inga tomma fält kan skickas.
+* Alla länkar har verifierats och fungerar som förväntat.
+* Användaren kan ladda ner CV utan problem.
+* Väder API visar felmeddelande vid felaktig inmatning av stad. 
 
 ## Kontakta mig
 * E-post: kimberly.hadjal@yh.nackademin.se

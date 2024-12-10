@@ -5,55 +5,53 @@ body{
   background-color:#fcfcfc;
 }
 
-/* För headern och videon */
 header {
-  position: relative; /* Behåll positioneringen för att placera elementen korrekt */
-  height: 100vh; /* Full höjd för videon */
-  width: 100%; /* Full bredd */
-  overflow: hidden; /* Dölj allt som går utanför headern */
+  position: relative; 
+  height: 100vh; 
+  width: 100%; 
+  overflow: hidden; 
 }
 
 header video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Gör videon så bred som fönstret */
-  height: 100%; /* Gör videon så hög som fönstret */
-  object-fit: inherit; /* Skär och justerar videon så att den täcker hela området utan förvrängning */
-  z-index: -1; /* Lägg videon bakom innehållet */
+  width: 100%; 
+  height: 100%; 
+  object-fit: inherit; 
+  z-index: -1; 
 }
 
-/* För navigeringen */
 nav {
-  position: absolute; /* Placera den ovanpå videon */
-  top: 10px; /* Avstånd från toppen av sidan */
-  right: 20px; /* Avstånd från högersidan */
-  z-index: 10; /* Gör att navigeringen ligger ovanpå videon */
+  position: absolute; 
+  top: 10px; 
+  right: 20px; 
+  z-index: 10; 
 }
 
 nav ul {
-  list-style: none; /* Ta bort punktlista */
-  margin: 0; /* Ingen marginal */
-  padding: 0; /* Ingen padding */
-  display: flex; /* Gör att länkarna visas på samma rad */
-  gap: 20px; /* Avstånd mellan länkar */
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  gap: 20px; 
 }
 
 nav ul li {
-  display: inline; /* Placera länkarna på rad */
+  display: inline; 
 }
 
 nav ul li a {
-  text-decoration: none; /* Ingen understrykning */
-  color: #f4f2f2; /* Textfärg */
-  font-weight:normal; /* Normal text */
-  padding: 10px 15px; /* Lägg till lite utrymme runt länkarna */
-  background: rgba(160, 39, 39, 0.858); /* Halvtransparent bakgrund för bättre läsbarhet */
-  border-radius: 5px; /* Runda hörn */
+  text-decoration: none; 
+  color: #f4f2f2; 
+  font-weight:normal; 
+  padding: 10px 15px; 
+  background: rgba(160, 39, 39, 0.858); 
+  border-radius: 5px; 
 }
 
 nav ul li a:hover {
-  background: rgba(123, 122, 122, 0.2); /* Ändra bakgrund vid hover */
+  background: rgba(123, 122, 122, 0.2); 
   color: black;
 }
 
@@ -64,13 +62,12 @@ nav ul li a:hover {
   padding: 4rem;
   gap: 2rem;
   text-align: left;
-  background-image: url("about2.png"); /* Ange bildens sökväg */
-  background-size:auto; /* Ser till att bilden fyller hela sektionen */
-  background-position: right; /* Centrerar bilden */
-  background-repeat: no-repeat; /* Förhindrar att bilden upprepas */
+  background-image: url("about2.png"); 
+  background-size:auto; 
+  background-position: right; 
+  background-repeat: no-repeat; 
 }
 
-/* Om Mig-sektion */
 .about-content {
   display: flex;
   gap: 2rem;
@@ -94,18 +91,17 @@ nav ul li a:hover {
   max-width: 600px;
 }
 
-/* Porträtt-container */
 .portrait-container {
-  display: flex; /* Flexbox för vertikal layout */
-  flex-direction: column; /* Placera innehållet vertikalt */
-  align-items: center; /* Centrera innehållet horisontellt */
-  gap: 1rem; /* Utrymme mellan bilden och knappen */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1rem; 
 }
 
 .portrait {
   width: 300px;
   height: 300px;
-  border-radius: 50%; /* Gör bilden rund */
+  border-radius: 50%; 
   box-shadow: 0 4px 8px #ad3030;
   object-fit: cover;
 }
@@ -121,17 +117,16 @@ nav ul li a:hover {
 }
 
 .download-button:hover {
-  background-color: green; /* Gör knappen grön vid hover */
+  background-color: green; 
 }
 
-/* För resten av sidan */
 section {
   padding: 2rem;
   color: black;
 }
 
 #skills {
-  text-align: center; /* Centrerar hela sektionen */
+  text-align: center; 
   padding: 2rem;
   font-family: "Abril Fatface", serif;
   color:#ad3030;
@@ -141,34 +136,34 @@ section {
 }
 
 .skills-container {
-  display: flex; /* Gör att bilderna placeras på en rad */
-  justify-content: center; /* Centrerar bilderna horisontellt */
-  gap: 2rem; /* Skapar utrymme mellan bilderna */
-  flex-wrap: wrap; /* Gör att bilderna radbryts på små skärmar */
+  display: flex; 
+  justify-content: center; 
+  gap: 2rem; 
+  flex-wrap: wrap; 
 }
 
 .skills-container img {
-  width: 300px; /* Bildens bredd */
-  height: 300px; /* Bildens höjd */
-  object-fit: contain; /* Anpassar bilden inom rutan utan att förvränga den */
-  border-radius: 10px; /* Rundar hörnen något, kan justeras */
-  box-shadow: 0 4px 8px #ad3030; /* Lägger till en skugga för snyggare design */
-  transition: transform 0.3s; /* Gör en snygg effekt vid hover */
+  width: 300px; 
+  height: 300px; 
+  object-fit: contain; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px #ad3030; 
+  transition: transform 0.3s; 
 }
 
 .skills-container img:hover {
-  transform: scale(1.1); /* Förstorar bilden något när användaren hovrar */
+  transform: scale(1.1); 
 }
 
 #portfolio {
-  text-align: center; /* Centrerar rubrik och innehåll */
-  padding: 4rem 2rem; /* Lägger till luft runt sektionen */
+  text-align: center; 
+  padding: 4rem 2rem; 
 }
 
 #portfolio h2 {
-  font-size: 2.5rem; /* Anpassar storleken på rubriken */
-  margin-bottom: 1rem; /* Skapar avstånd mellan rubrik och video */
-  color: #ad3030; /*färg*/
+  font-size: 2.5rem; 
+  margin-bottom: 1rem;
+  color: #ad3030; 
   font-family: "Abril Fatface", serif;
 }
 
@@ -177,10 +172,10 @@ section {
 }
 
 #portfolio p {
-  font-size: 1rem; /* Standardstorlek för text */
-  line-height: 1.5; /* Skapar en bekväm radavstånd */
-  margin-top: 1rem; /* Ger avstånd mellan video och text */
-  color: black; /* Neutral färg för text */
+  font-size: 1rem; 
+  line-height: 1.5;
+  margin-top: 1rem; 
+  color: black; 
 }
 #portfolio a{
   color:#ad3030;
@@ -189,25 +184,23 @@ section {
 #portfolio a:hover{
   color: green;
 }
-
 .portfolio-videos video {
-  margin: 0 auto; /* Centrerar videon horisontellt */
-  max-width: 800px; /* Begränsar bredden på videon */
-  width: 100%; /* Låter videon fylla hela sin container */
-  max-height: 450px; /* Sätter en maxhöjd för videon */
+  margin: 0 auto; 
+  max-width: 800px; 
+  width: 100%; 
+  max-height: 450px; 
 }
 
-@media (max-width: 768px) { /* EVENTUELLT TA BORT */
+@media (max-width: 768px) { 
   #portfolio h2 {
-    font-size: 2rem; /* Gör rubriken mindre på mindre skärmar */
+    font-size: 2rem; 
   }
   
   .portfolio-videos video {
-    max-height: 300px; /* Anpassar videons storlek för mobiler */
+    max-height: 300px; 
   }
 }
 
-/* REFERENSSEKTION */
 #references {
   text-align: center;
   padding: 4rem 2rem;
@@ -221,19 +214,17 @@ section {
   color:#ad3030;
 }
 
-/* Container för bubblorna */
 .references-container {
   background-color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Mellanrum mellan bubblor */
+  gap: 2rem; 
 }
 
-/* Bubblor */
 .reference-bubble {
   background-color: #fcfcfc;
-  border-radius: 50%; /* Gör den rund */
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   display: flex;
@@ -245,7 +236,6 @@ section {
   box-shadow: 0 0 15px #ad3030;
 }
 
-/* Text i bubblorna */
 .reference-bubble p {
   font-size: 1rem;
   color: black;
@@ -268,7 +258,6 @@ section {
   }
 }
 
-/* Kontaktsektion */
 #contact {
   display: flex;
   justify-content: center;
@@ -277,10 +266,9 @@ section {
   padding: 4rem 2rem;
 }
 
-/* Ruta för kontaktformulär */
 .contact-box {
   background-color: #fff;
-  border-radius: 15px; /* Rundade hörn */
+  border-radius: 15px; 
   box-shadow: 0 0 15px #ad3030;
   padding: 2rem;
   max-width: 500px;
@@ -288,7 +276,6 @@ section {
   text-align: center;
 }
 
-/* Titel i kontaktsektionen */
 #contact h2 {
   font-size: 2rem;
   font-family: "Abril Fatface", serif;
@@ -296,14 +283,12 @@ section {
   color:#ad3030
 }
 
-/* Formulärens styling */
 #contactForm {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Avstånd mellan fälten */
+  gap: 1rem; 
 }
 
-/* Formfältens styling */
 #contactForm label {
   font-size: 1rem;
   color: black;
@@ -315,12 +300,11 @@ section {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 8px; /* Rundade kanter */
+  border-radius: 8px; 
   font-size: 1rem;
   resize:none;
 }
 
-/* Knappar */
 #contactForm button {
   background-color: #ad3030;
   color: white;
@@ -351,20 +335,102 @@ footer {
   background-color: #f4f2f2;
   color:#ad3030;
 }
+#weather-container{
+  background: linear-gradient(#ad3030, #f4f2f2);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ad3030;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ad3030;
+  text-align: center;
+}
+#weather-container h2{
+  color:#f4f2f2;
+  margin: 8px 0;
+  font-family:"Abril Fatface", serif;
+}
+#weather-container input{
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+#weather-container button{
+  background-color: #ad3030;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#weather-container button:hover{
+  background-color: green;
+}
+
+#temp-div p{
+  font-size: 60px;
+  margin-top: -30px;
+}
+
+#weather-info{
+  font-size: 20px;
+}
+
+#weather-icon{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+  margin-bottom: 0;
+  display: none;
+}
+#hourly-forecast{
+  margin-top: 50px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourly-item{
+  flex: 0 0 auto;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color:#ad3030;
+}
+
+.hourly-item img{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#hourly-heading{
+  color: #ad3030;
+  margin-top: 10px;
+}
 
 .icons {
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Mellanrum mellan ikoner */
+  gap: 1rem;
   margin-top: 1rem;
 }
 
-/* Stil för länkar runt ikonerna */
 .icons a {
   color:#ad3030; 
-  font-size: 1.5rem; /* Storlek på ikoner */
+  font-size: 1.5rem;
   display: inline-block;
-  transition: color 0.3s ease, transform 0.3s ease; /* Smidig övergång */
+  transition: color 0.3s ease, transform 0.3s ease; 
   text-decoration: none;
 }
 .icons p{
@@ -372,6 +438,6 @@ footer {
 }
 
 .icons a:hover {
-  color: green; /* Färgförändring vid hover (grön här som exempel) */
-  transform: scale(1.2); /* Gör ikonen större vid hover */
+  color: green; 
+  transform: scale(1.2); 
 }
