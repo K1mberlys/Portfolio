@@ -23,7 +23,7 @@ Följande teknologier har använts i skapandet av projektet:
 * Google Fonts för typsnitt. 
 
 ## Användning
-1. Klona mitt repository: https://github.com/K1mberlys/ditt-repo.git
+1. Klona mitt repository: https://github.com/K1mberlys/Portfolio.git
 2. I index.html filen: högerklicka och välj "Open with Live Server" för att se portföljen. 
 
 ## Kodstruktur
